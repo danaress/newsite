@@ -1,0 +1,69 @@
+.intro-section{
+  padding-top: 0px;
+}
+
+.backgroundImg{
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 0px;
+  top: -25px;
+}
+
+.top-section{
+  width: 100%;
+  height: auto;
+  padding: 0px;
+  margin-bottom: -25px;
+}
+
+.headline-section{
+  color: white;
+  font-family: helvetica;
+  text-align: left;
+  position: absolute;
+  left: 15%;
+  top: 20%;
+  width: 100%;
+}
+
+.navButton-section{
+  position: absolute;
+  width: 100%;
+  top: 55%;
+  margin-left: 25px;
+}
+
+.navButtons{
+  color: white;
+  font-family: helvetica;
+  background-color: rgba(211,211,211,0);
+  font-size: 22px;
+  font-weight: 200;
+  border-radius: 8px;
+  border: 2px solid white;
+  margin-left: 25px;
+  margin-right: 25px;
+  width: 150px;
+  padding: 10px;
+}
+.navButtons:hover{
+  color: white;
+  background-color: rgba(211,211,211,0.2);
+}
+.navButtons:active{
+  color: white;
+  background-color: rgba(211,211,211,0.2);
+}
+.navButtons:visited{
+  color: white;
+  background-color: rgba(211,211,211,0.2);
+}
+.navButtons:focus{
+  color: white;
+  background-color: rgba(211,211,211,0.2);
+}
+
+.about-section, .services-section, .contact-section{
+  padding-top: 0px;
+}
