@@ -10,6 +10,8 @@
     <meta name="author" content="">
 
     <title>Dana Ress</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.2/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.2/angular-route.js"></script>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -32,6 +34,52 @@
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
+
+
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Dana Ress</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#projects">Work</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+
+
+
+
+
+
     <!-- Intro Section -->
     <section id="intro" class="intro-section">
         <div class="container-fluid">
@@ -42,11 +90,9 @@
                         <h1 class="headline">Hey, I'm Dana.</h1>
                         <h3 class="headline">I'm a web developer based in Denver.</h3>
                     </div>
-                    <div class="navButton-section">
-                        <a class="btn navButtons page-scroll" href="#about">About</a>
-                        <a class="btn navButtons page-scroll" href="#projects">Work</a>
-                        <a class="btn navButtons page-scroll" href="#contact">Contact</a>
-                    </div>
+<!--                     <div class="navButton-section">
+                        <a class="btn navButtons page-scroll" href="#about">&#65516</a>
+                    </div> -->
                 </div>
 
             </div>
@@ -55,12 +101,23 @@
 
     <!-- About Section -->
     <section id="about" class="about-section">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-12 section-heading">
                     <h1>About Section</h1>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-xs-6">
+                    <img class="portrait" src="skipic.png"/>
+                </div>
+                <div class="col-xs-6">
+                    <h3>TL;DR</h3><p>I'm a web developer and technology enthusiast living in Denver, Colorado.</p>
+                    <p>I'm working primarily with JavaScript, AngularJS, NodeJS, and MongoDB at the moment - also learning some lower level languages.</p>
+                    <h3>My Whole Life Story</h3><p>I grew up in Newtown, CT.</p><p>I went to school in Boston and studied English (Latin American Boom is my favorite period).</p><p>I fell in love with startups (right) before they were cool - experiences including urban-agriculture, pro-consumer online banking, on demand home services, and B2B coffee supply.</p>
+                    <p></p>
+                </div>
+            </div>            
         </div>
     </section>
 
@@ -68,7 +125,7 @@
     <section id="projects" class="services-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-12 section-heading">
                     <h1>Services Section</h1>
                 </div>
             </div>
@@ -79,7 +136,7 @@
     <section id="contact" class="contact-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-12 section-heading">
                     <h1>Contact Section</h1>
                 </div>
             </div>
