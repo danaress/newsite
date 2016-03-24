@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Dana Ress</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.2/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.2/angular-route.js"></script>
+    <script src="./js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="./js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="./js/jquery.easing.min.js"></script>
+    <script src="./js/scrolling-nav.js"></script>
+
+    <!-- Bootstrap Core CSS -->
+<!--     <link href="./css/bootstrap.css" rel="stylesheet"> -->
+
+    <!-- Custom CSS -->
+    <link href="./css/scrolling-nav.css" rel="stylesheet">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+
+    <link href="./css/main.css" rel="stylesheet">
+    <script src="main.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body ng-controller="mainController" id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Dana Ress</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#projects">Work</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+
+
+
+
+
+
+    <!-- Intro Section -->
+    <section id="intro" class="intro-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 top-section">
+                    <img class="backgroundImg" src="bckgrnd.jpg"/>
+                    <div class="headline-section">
+                        <h1 class="headline">Hey, I'm Dana.</h1>
+                        <h3 class="headline">I'm a web developer based in Denver.</h3>
+                    </div>
+<!--                     <div class="navButton-section">
+                        <a class="btn navButtons page-scroll" href="#about">&#65516</a>
+                    </div> -->
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 section-heading">
+                    <h1>About</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6">
+                    <img class="portrait" src="skipic.png"/>
+                </div>
+                <div class="col-xs-6">
+                    <h3 ng-click="TLDR()">TL;DR</h3><button ng-click="MWLS()">My Whole Life Story</button>
+                    <p ng-hide="short">Short version of my story</p>
+                    <p ng-show="long">Long version of my story</p>
+
+
+
+<!--                         <div id="main">
+                        <div ng-view>   
+                        </div> -->
+
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="projects" class="services-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 section-heading">
+                    <h1>Work</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 section-heading">
+                    <h1>Contact</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+
+</html>
