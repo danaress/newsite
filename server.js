@@ -13,7 +13,7 @@ app.use(express.static(__dirname + '/public'));
 
 // Routes \\
 app.get('/', function(req, res){
-  res.sendFile('/index.html', {root : './public'});
+  res.sendFile('/index.html/#/tldr', {root : './public'});
 });
 
 // Creating Server and Listening for Connections \\
