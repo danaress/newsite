@@ -13,10 +13,7 @@ var myApp = angular.module('myApp', ['ngRoute'])
 
 
 myApp.controller('mainController', function($scope){
-
-$scope.MWLS = function(){
-  console.log("Balls");
-}
+$('#tldr').tab('show')
 
   });
 

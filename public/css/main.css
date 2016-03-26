@@ -71,6 +71,10 @@
   padding-top: 0px;
 }
 
+.about-section{
+/*  background-color: #E5FFF2;*/
+}
+
 .row{
   margin-left: auto;
   margin-right: auto;
@@ -85,16 +89,40 @@
   padding: 0px;
 }
 .portrait{
-  width: 50%;
+  width: 60%;
   height: auto;
 }
 
 .alltabs{
+  left: 30%;
+  width: 25%;
+}
 
-  width: 50%;
+.list{
+  position: absolute;
+  text-align: left;
+  width: 100%;
+  font-family: helvetica;
+}
+.listItem{
+  line-height: 10px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  line-height: 20px;
+  font-size: 14px;
+    background: #D0E5D5;
+    border-radius: 3px;
+    padding: 8px;
+}
+.header{
+  font-family: times;
 }
 
 .bio{
+  position: absolute;
+  text-align: left;
+  width: 100%;
+  top: 100px;
   font-size: 24px;
   font-family: helvetica;
 }
